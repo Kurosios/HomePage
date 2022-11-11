@@ -215,7 +215,13 @@
 
    align-items: center;
    word-break:break-all;
- 
+   cursor:pointer;
+}
+
+.titulo:hover{
+  color:hsl(5, 85%, 63%);
+  transition:all 0.3s;
+
 
 }
 .smallresum{  
