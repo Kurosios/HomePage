@@ -100,6 +100,7 @@
    border:none;
    font-family: 'Inter', sans-serif;
    transition: all 0.3s;
+   cursor:pointer;
 }
 .prin_3 button:hover{
    background: hsl(5, 85%, 63%);
@@ -147,7 +148,15 @@
    padding-bottom: 20px;
    font-size:30px;
    color:hsl(36, 100%, 99%);
+   transition:all 0.3s;
+   cursor:pointer;
 }
+.n_ti:hover{
+   color:hsl(5, 85%, 63%);
+   transition:all 0.3s;
+
+ 
+ }
 
 .n_r{
    color:hsl(233, 8%, 79%);
