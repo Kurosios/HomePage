@@ -189,13 +189,13 @@
 
 .f-cont img{
 
-   width: 150px;
-   height:200px;
+   width: 200px;
+   height:254px;
 
 }
 
 .numero{
-   width:300px;
+   width:200px;
    margin:0 auto;
    padding-left: 30px;
    padding-bottom: 3px;
@@ -205,7 +205,7 @@
    word-break:break-all;
 }
 .titulo{
-   width:300px;
+   width:200px;
    margin:0 auto;
    padding-left: 30px;
    padding-bottom: 50px;
@@ -220,7 +220,7 @@
 }
 .smallresum{  
    margin:0 auto;
-   width:300px;
+   width:200px;
    padding-left: 30px;
    padding-bottom: 3px;
    color:hsl(233, 8%, 79%);
