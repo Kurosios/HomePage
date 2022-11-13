@@ -11,7 +11,7 @@
    grid-row-gap: 40px;
    max-width:1440px;
    margin:0 auto;
-   min-width: 600px;
+
 }
 /*--------------------------------------------------nav-----------------------------------------------------------*/
 .nav_cont{
@@ -21,6 +21,7 @@
    display: grid;
    grid-template-columns: 80px 1fr 1fr;
  }
+ .nav-respon{display:none}
  
  .perfil{
    margin:auto;
@@ -252,13 +253,12 @@
    font-size:15px;
    word-break:break-all;
 }  
-}
 /*--------------------------------------------------min width----------------------------------------------------------*/
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
 
    .cont{
-      width: 100%;
+      width: 375px;
       display:flex;
       flex-wrap: wrap;
       flex-direction: column;
@@ -266,43 +266,99 @@
 
    }
    /*--------------------------------------------------nav-----------------------------------------------------------*/
+ 
    .nav_cont{
-      width: 100%;
-      height: 70px;
-   
-      display: grid;
-      grid-template-columns: 80px 1fr 1fr;
-    }
-    
-    .perfil{
-      margin:auto;
-    }
-   
-    .menu{
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
-    }
-    
-    .n_m{
-    
-      font-family: 'Inter', sans-serif;
-      margin:auto;
-      transition:all 0.3s;
-      cursor:pointer;
-    }
-    
-    .n_m:hover{
-      color:hsl(5, 85%, 63%);
-      transition:all 0.3s;
-   
-    
-    }
-   
+    display:none;
+ }
+
+ .nav-respon{  
+   display:grid;
+   grid-template-columns: 115px 115px 115px;
+   width: 360px;
+   max-width:360px;
+   height: 50px;
+
+   outline:invert
+ }
+ 
+ .ico{
+   padding:5px 2px;
+ }
+ 
+ .menu{
+   width:30px;
+   height:30px;
+   position: relative;
+   top:30%;
+   right: -57%;
+   color: black;
+   transition:right 0.7s;
+ }
+ 
+ .capo{
+   width:30px;
+   height:30px;
+   position: relative;
+   top:-17%;
+   right: -87%;
+   font-size: 20px;
+   border-radius:10px;
+   color: black;
+   transition:right 0.7s;
+ }
+
+ 
+ .contenido{
+   width:70%;
+   height:100%; 
+   background: aqua;
+   position: absolute;
+   top: 0;
+   right: -70%;
+   border-left: 2px solid black;
+   background: rgb(255, 255, 255);
+   transition:right 0.7s;
+   display: flex;
+   Align-content:center;
+   flex-wrap: wrap;
+
+ }
+
+
+ .menu-cont{
+   justify-content: space-around;
+   align-items: flex-start;
+   flex-direction:column;
+ }
+
+ .checkbox:checked ~ .contenido{
+   right:0;
+ 
+ }
+
+ .checkbox:checked ~ .contenido{
+   box-shadow: -120px 0px #00000039 ;
+   transition: all 0.7s;
+  
+ }
+ 
+ .checkbox{
+   display:none;
+ }
+
+ .n_m{
+   padding: 20px 0px;
+   font-family: 'Inter', sans-serif;
+   margin:auto;
+   transition:all 0.3s;
+   cursor:pointer;
+ }
+ 
    
    
    /*--------------------------------------------------cuerpo-----------------------------------------------------------*/
    .cuerpo{
+      width:370px;
       padding:15px 0px;
       display:flex;
       background:rgb(255, 255, 255);
@@ -314,14 +370,15 @@
       width:100%;
       display:flex;
       flex-wrap: wrap;
-      padding:10px 0px;
+      padding:40px 0px;
    }
    .prin_1{
-      width:100%;
+      width:370px;
+      max-width: 370px;
    }
    
    .prin_1 img{
-      width:100%;
+      width:360px;
       height:100%;
    
       
@@ -337,28 +394,26 @@
    }
    .prin_3{
       display: flex;
-      width:100%;
+      width:360px;
       font-size: 20px;
       font-family: 'Inter', sans-serif;
       color:hsl(233, 8%, 79%);
       flex-wrap: wrap;
       padding-bottom:10px;
+      padding:0;
    
    }
    
    .prin_3 p{
-      padding: 0;
-      display:inline-block;
+      padding: 0px;
+ 
 
-
-   
-   
    }
    .prin_3 button{
       color:hsl(0, 0%, 100%);
       font-size:15px;
       background:hsl(240, 100%, 5%);
-      height:40px;
+      height:60px;
       width:200px;
       border:none;
       font-family: 'Inter', sans-serif;
@@ -372,7 +427,7 @@
    
    /*--------------------------------------------------assets-----------------------------------------------------------*/
    .assets{
-      width: 100%;
+      width: 370px;
       display: grid;
       border: 1px solid black;
       background: hsl(240, 100%, 5%);
@@ -442,7 +497,7 @@
    /*--------------------------------------------------foot-----------------------------------------------------------*/
    .foot{
 
-      width:100%;
+      width:370px;
       display:flex;
       max-height:254px;
       flex-wrap:wrap;
