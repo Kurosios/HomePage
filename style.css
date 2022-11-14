@@ -313,15 +313,15 @@
    height:100%; 
    background: aqua;
    position: absolute;
-   top: 0;
-   right: -70%;
+   right:-88%;
+   top:2%;
    border-left: 2px solid black;
    background: rgb(255, 255, 255);
-   transition:right 0.7s;
    display: flex;
    Align-content:center;
    flex-wrap: wrap;
-
+   display:none;
+   transition:right 0.7s;
  }
 
 
@@ -333,6 +333,8 @@
 
  .checkbox:checked ~ .contenido{
    right:0;
+   display:block;
+   trnasition: right 0.7s;
  
  }
 
